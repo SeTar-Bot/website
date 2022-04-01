@@ -1,0 +1,91 @@
+/* NORMAL */
+.head_top {
+    background: url(../../assets/images/banner.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header {
+    width: 100%;
+    background: transparent;
+    padding: 30px 30px;
+}
+
+.full {
+    float: left;
+    width: 100%;
+}
+
+.full {
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.logo a {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 40px;
+}
+
+.banner_main {
+    padding: 90px 0 190px 0;
+}
+
+.text-bg {
+    text-align: left;
+    max-width: 561px;
+    width: 100%;
+    float: right;
+    padding-right: 141px;
+}
+
+.text-bg h1 {
+    color: #fff;
+    font-size: 48px;
+    line-height: 65px;
+    font-weight: bold;
+}
+
+.text-bg p {
+    color: #fff;
+    font-size: 17px;
+    line-height: 28px;
+    padding: 40px 0;
+}
+
+.text-bg a {
+    font-size: 17px;
+    background-color: #fff;
+    color: #0891f8;
+    padding: 13px 0px;
+    width: 100%;
+    max-width: 190px;
+    text-align: center;
+    display: inline-block;
+    transition: ease-in all 0.5s;
+    border-radius: 10px;
+}
+
+.text-bg a:hover {
+    background-color: #000;
+    color: #fff;
+    transition: ease-in all 0.5s;
+    border-radius: 26px;
+}
+
+.text-img {
+    padding-top: 100px;
+}
+
+.text-img figure {
+    margin: 0px;
+}
+
+.text-img figure img {
+    width: 100%;
+}

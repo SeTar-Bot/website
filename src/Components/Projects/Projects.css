@@ -1,0 +1,57 @@
+.projects {
+    padding-top: 90px;
+    position: relative;
+}
+
+.projects::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 542px;
+    right: 0;
+    background: url(../../assets/images/midil.png);
+    top: -210px;
+}
+
+.projects .titlepage span {
+    color: #0891f8;
+    font-size: 30px;
+    font-family: 'Baloo Chettan', cursive;
+    text-transform: uppercase;
+    line-height: 37px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.projects .titlepage h2 {
+    color: #272f43;
+    font-weight: normal;
+}
+
+.projects .projects_box {
+    text-align: center;
+}
+
+.projects .projects_box figure {
+    margin: 0;
+}
+
+.projects .projects_box figure img {
+    width: 100%;
+}
+
+.projects .projects_box p {
+    color: #000;
+    font-size: 17px;
+    line-height: 28px;
+    padding: 60px 0px 35px 0px;
+}
+
+.projects .projects_box .read_more {
+    background: #252525;
+    color: #fff;
+}
+
+.projects .projects_box .read_more:hover {
+    background: #0891f8;
+}
