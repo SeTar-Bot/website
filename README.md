@@ -11,12 +11,13 @@
 - [Installation](#installation)
 - [Support](#support)
 - [ToS](#tos)
+- [Privacy Policy](#privacy-policy)
 - [LICENSE](#license)
 
 ### Why Setar-Bot?
 Setar-bot has many features, but to begin with, we would suggest, the bot has a mutli language system implanted in the source, so you can easily manage and add your own very language to the bot.
 
-### Installation ()
+### Installation
 
 - Install Packages
 
@@ -45,6 +46,9 @@ You can ask about Source configuration and bot setup in [our Disocrd Server](htt
 
 ### ToS
 Our Applications Terms of Services are available in [ToS.html](https://github.com/SeTar-Bot/website/blob/main/ToS.html)
+
+### Privacy Policy
+Our Applications Privacy Policy are available in [Privacy.html](https://github.com/SeTar-Bot/website/blob/main/Privacy.html)
 
 ### License
 ```

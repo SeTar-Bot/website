@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate, Link } from 'react-ro
 
 import App from "./App";
 import { RouteHandlers } from "./Components";
-const { GithubProfile, GithubRepo, InviteRoute, SupportRoute } = RouteHandlers;
+const { GithubProfile, GithubRepo, InviteRoute, SupportRoute, ToS, Privacy } = RouteHandlers;
 
 ReactDOM.render(
     <Router>
@@ -15,6 +15,8 @@ ReactDOM.render(
             <Route path="/github" element={<GithubProfile/>} />
             <Route path="/repo" element={<GithubRepo/>} />
             <Route path="/invite" element={<InviteRoute/>} />
+            <Route path="/tos" element={<ToS/>} />
+            <Route path="/privacy" element={<Privacy/>} />
             <Route path="/*" element={<Navigate replace to="/" />} />
         </Routes>
     </Router>,
