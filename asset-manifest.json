@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.83fb6c82.css",
+    "main.js": "/static/js/main.412e43de.js",
+    "static/media/banner.png": "/static/media/banner.d4fa052e923904208376.png",
+    "static/media/midil.png": "/static/media/midil.7dbe2a34ea7704f64b19.png",
+    "index.html": "/index.html",
+    "main.83fb6c82.css.map": "/static/css/main.83fb6c82.css.map",
+    "main.412e43de.js.map": "/static/js/main.412e43de.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.83fb6c82.css",
+    "static/js/main.412e43de.js"
+  ]
+}
