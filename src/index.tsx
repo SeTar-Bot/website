@@ -14,9 +14,7 @@ ReactDOM.render(
             <Route path="/support" element={<SupportRoute/>} />
             <Route path="/github" element={<GithubProfile/>} />
             <Route path="/repo" element={<GithubRepo/>} />
-            <Route path="/invite" element={<InviteRoute/>} />
-            <Route path="/tos" element={<ToS/>} />
-            <Route path="/privacy" element={<Privacy/>} />
+            <Route path="/invite" element={<InviteRoute/>} />   
             <Route path="/*" element={<Navigate replace to="/" />} />
         </Routes>
     </Router>,
