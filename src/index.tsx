@@ -9,7 +9,7 @@ const { GithubProfile, GithubRepo, InviteRoute, SupportRoute, ToS, Privacy } = R
 ReactDOM.render(
     <Router>
         <Routes>
-            <Route path="/website/" element={<App/>} />
+            <Route path="/" element={<App/>} />
             <Route path="/discord" element={<SupportRoute/>} />
             <Route path="/support" element={<SupportRoute/>} />
             <Route path="/github" element={<GithubProfile/>} />
@@ -17,7 +17,7 @@ ReactDOM.render(
             <Route path="/invite" element={<InviteRoute/>} />
             <Route path="/tos" element={<ToS/>} />
             <Route path="/privacy" element={<Privacy/>} />
-            <Route path="/*" element={<Navigate replace to="/website/" />} />
+            <Route path="/*" element={<Navigate replace to="/" />} />
         </Routes>
     </Router>,
     document.getElementById("root")
