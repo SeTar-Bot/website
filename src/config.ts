@@ -28,7 +28,7 @@ const config: DataConfig = {
         .setContacts([
             {
                 type: 'github',
-                url: 'https://github.org/setar-bot',
+                url: 'https://github.com/setar-bot',
                 placeholder: 'Setar-Bot'
             }
         ])
