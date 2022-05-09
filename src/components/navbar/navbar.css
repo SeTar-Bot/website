@@ -27,7 +27,7 @@
   border-radius: 50%;
 }
 
-.icon {
+.navicon {
   font-size: 50px;
   border-radius: 50%;
   padding: 10px;
@@ -35,17 +35,17 @@
   fill: rgb(209, 217, 252);
 }
 
-.navigation .icon.active-nav {
+.navigation .navicon.active-nav {
   fill: rgb(88, 117, 248);
   border: 2px solid rgb(88, 117, 248);
 }
 
-.navigation .icon:hover {
+.navigation .navicon:hover {
   fill: rgba(88, 117, 248, 0.151);
   border: 2px solid rgba(88, 117, 248, 0.192);
 }
 
-.navigation .icon.active-nav:hover {
+.navigation .navicon.active-nav:hover {
   fill: rgb(88, 117, 248);
   border: 2px solid rgb(88, 117, 248);
 }
@@ -83,7 +83,7 @@
     border-radius: 50%;
   }
 
-  .icon {
+  .navicon {
     font-size: 70px;
     border-radius: 50%;
     padding: 10px;
@@ -126,7 +126,7 @@
     border-radius: 50%;
   }
 
-  .icon {
+  .navicon {
     font-size: 50px;
     border-radius: 50%;
     padding: 10px;

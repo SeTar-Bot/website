@@ -15,18 +15,18 @@ export default class Navbar extends React.Component {
         {context => (
           <div className="navigation">
             <a href="#home">
-              <AiOutlineHome className="icon active-nav" />
+              <AiOutlineHome className="navicon active-nav" />
             </a>
             <a href="#about">
-              <AiOutlineUser className="icon" />
+              <AiOutlineUser className="navicon" />
             </a>
-            {context.members ? <a href="#members"><TiGroupOutline className="icon" /></a> : <></>}
+            {context.members ? <a href="#members"><TiGroupOutline className="navicon" /></a> : <></>}
             
             <a href="#contact">
-              <BiMessageRoundedDots className="icon" />
+              <BiMessageRoundedDots className="navicon" />
             </a>
             <a href="#footer">
-              <BsArrowDownCircle className="icon" />
+              <BsArrowDownCircle className="navicon" />
             </a>
           </div>
         )}
