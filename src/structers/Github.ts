@@ -1,4 +1,4 @@
-import { IContact, IGithub, IGithubOrg, IGithubUser } from "../types/GithubTypes";
+import { IContact, IGithub } from "../types/GithubTypes";
 import { Octokit } from "@octokit/rest"
 import { RestEndpointMethods } from "@octokit/plugin-rest-endpoint-methods/dist-types/generated/method-types";
 
@@ -17,8 +17,8 @@ export default class Github implements IGithub {
         }
     }
 
-    avatar_url: string = "";
-    name: string = "";
+    avatar_url: string;
+    name: string;
     pronounce: "Me" | "Us";
     role?: "contributer" | "founder" = "contributer";
     id?: number;
