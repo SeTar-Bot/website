@@ -27,13 +27,7 @@ jobs:
       
       - name: 🧪 Lint
         run: npm run lint
-        
-      - name: Where are we
-        run: echo "$PWD"
 
-      - name: What is in it
-        run: ls /home/runner/work/website/website/src/components/footer/
-        
       - name: Building 🧱
         run: npm run build
 

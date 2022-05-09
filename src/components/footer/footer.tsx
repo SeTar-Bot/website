@@ -5,19 +5,20 @@ import { TiSocialTwitter, TiSocialLinkedin, TiSocialSkype, TiSocialYoutube, TiSo
 import * as React from "react";
 import { DataContext } from "../../contexts";
 
+const Icons = {
+  youtube: () => (<TiSocialYoutube className="social"/>),
+  whatsapp: () => (<BsWhatsapp className="social"/>),
+  instagram: () => (<BsInstagram className="social"/>),
+  skype: () => (<TiSocialSkype className="social"/>),
+  github: () => (<TiSocialGithub className="social"/>),
+  yahoo: () => (<FaYahoo className="social"/>),
+  linkedin: () => (<TiSocialLinkedin className="social"/>),
+  twitter: () => (<TiSocialTwitter className="social"/>),
+}
+
 export default class Footer extends React.Component {
   render()
   {
-    const Icons = {
-      youtube: () => (<TiSocialYoutube className="social"/>),
-      whatsapp: () => (<BsWhatsapp className="social"/>),
-      instagram: () => (<BsInstagram className="social"/>),
-      skype: () => (<TiSocialSkype className="social"/>),
-      github: () => (<TiSocialGithub className="social"/>),
-      yahoo: () => (<FaYahoo className="social"/>),
-      linkedin: () => (<TiSocialLinkedin className="social"/>),
-      twitter: () => (<TiSocialTwitter className="social"/>),
-    }
     return (
       <div id="footer" className="container footer-container">
         <h1>
