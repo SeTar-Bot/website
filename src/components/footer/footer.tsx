@@ -1,9 +1,10 @@
-import "./footer.css";
 import { BsInstagram, BsWhatsapp, BsMouse } from "react-icons/bs";
 import { FaYahoo } from "react-icons/fa";
 import { TiSocialTwitter, TiSocialLinkedin, TiSocialSkype, TiSocialYoutube, TiSocialGithub } from "react-icons/ti";
 import * as React from "react";
 import { DataContext } from "../../contexts";
+
+import "./footer.css";
 
 const Icons = {
   youtube: () => (<TiSocialYoutube className="social"/>),
