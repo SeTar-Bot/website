@@ -1,5 +1,6 @@
 import "./contact.css";
 import { AiOutlineYoutube, AiOutlineWhatsApp, AiOutlineInstagram, AiOutlineSkype, AiOutlineWechat, AiOutlineGithub, AiOutlineGitlab, AiOutlineYahoo, AiOutlineLinkedin, AiOutlineTwitter } from "react-icons/ai";
+import { BsDiscord } from "react-icons/bs"
 import * as React from "react";
 import { DataContext } from "../../contexts";
 
@@ -13,7 +14,8 @@ const Icons = {
   gitlab: () => (<AiOutlineGitlab className="icon"/>),
   yahoo: () => (<AiOutlineYahoo className="icon"/>),
   linkedin: () => (<AiOutlineLinkedin className="icon"/>),
-  twitter: () => (<AiOutlineTwitter className="icon"/>)
+  twitter: () => (<AiOutlineTwitter className="icon"/>),
+  discord: () => (<BsDiscord className="icon"/>)
 }
 export default class Contact extends React.Component {
   render()

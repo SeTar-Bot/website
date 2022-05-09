@@ -27,7 +27,7 @@ export interface IGithubUser extends Pick<GithubUserApi, "avatar_url" | "html_ur
 }
 
 export interface IContact {
-    type: "instagram" | "twitter" | "github" | "whatsapp" | "youtube" | "linkedin" | "yahoo" | "skype";
+    type: "instagram" | "twitter" | "github" | "whatsapp" | "youtube" | "linkedin" | "yahoo" | "skype" | "discord";
     url: string;
     placeholder?: string
 }

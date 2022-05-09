@@ -30,6 +30,11 @@ const config: DataConfig = {
                 type: 'github',
                 url: 'https://github.com/setar-bot',
                 placeholder: 'Setar-Bot'
+            },
+            {
+                type: 'discord',
+                url: 'https://discord.gg/7jgfP6j4Tc',
+                placeholder: 'Discord'
             }
         ])
         .setShortInfo('One of the best Music Bots in Discord.'),

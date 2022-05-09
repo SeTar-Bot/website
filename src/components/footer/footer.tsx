@@ -1,5 +1,5 @@
 import "./footer.css";
-import { BsInstagram, BsWhatsapp, BsMouse } from "react-icons/bs";
+import { BsInstagram, BsWhatsapp, BsMouse, BsDiscord } from "react-icons/bs";
 import { FaYahoo } from "react-icons/fa";
 import { TiSocialTwitter, TiSocialLinkedin, TiSocialSkype, TiSocialYoutube, TiSocialGithub } from "react-icons/ti";
 import * as React from "react";
@@ -14,6 +14,7 @@ const Icons = {
   yahoo: () => (<FaYahoo className="social"/>),
   linkedin: () => (<TiSocialLinkedin className="social"/>),
   twitter: () => (<TiSocialTwitter className="social"/>),
+  discord: () => (<BsDiscord className="social"/>)
 }
 
 export default class Footer extends React.Component {
