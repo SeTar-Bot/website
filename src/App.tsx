@@ -15,7 +15,7 @@ export default class App extends React.Component {
             toggle.classList.toggle('active');
         });
 
-        let Icons = document.querySelectorAll('.navigation .icon');
+        const Icons = document.querySelectorAll('.navigation .icon');
 
         Icons.forEach((icon) => {
             icon.addEventListener('click', () => {
