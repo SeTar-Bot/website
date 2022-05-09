@@ -1,29 +1,49 @@
 import * as React from "react";
+import * as Components from "./components";
+import config from "./config";
+import DataProvider from "./DataProvider";
 
-// Components
-import { BodyScripts, Business, Footer, Header, Loading, Projects } from "./Components";
-import './assets/styles/responsive.all.css';
+import "./assets/styles/style.css"
 
-export default class App extends React.Component <{}> {
+export default class App extends React.Component {
 
     componentDidMount()
     {
-        setTimeout(() => {
-            document.getElementById('loader').style.display = "none";
-        }, 1000)
+        const toggle = document.querySelector('.hover-show');
+
+        toggle.addEventListener('click', () => {
+            toggle.classList.toggle('active');
+        });
+
+        const Icons = document.querySelectorAll('.navigation .icon');
+
+        Icons.forEach((icon) => {
+            icon.addEventListener('click', () => {
+                changeactive();
+
+                icon.classList.add('active-nav');
+            });
+        });
+
+        function changeactive() {
+            Icons.forEach((icon) => {
+                icon.classList.remove('active-nav');
+            });
+        }
     }
 
-    render() {
+    render()
+    {
         return (
-            <>
-                <Loading/>
-                <Header/>
-                <Business/>
-                <Projects/>
-                <Footer/>
-
-                <BodyScripts/>
-            </>
-        );
+            <DataProvider>
+                <Components.header/>
+                <Components.navbar/>
+                <Components.home/>
+                {config.enabledComponents.includes('about') ? <Components.about/> : ''}
+                {config.enabledComponents.includes('members') ? <Components.members/> : ''}
+                {config.enabledComponents.includes('contact') ? <Components.contact/> : ''}
+                <Components.footer/>
+            </DataProvider>
+        )
     }
 }
