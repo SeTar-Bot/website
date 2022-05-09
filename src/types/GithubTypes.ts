@@ -21,7 +21,6 @@ export interface IGithub {
     id?: number;
 }
 
-export interface IGithubOrg extends Pick<GithubOrgApi, "name" | "avatar_url" | "location" | "blog" | "description"> {}
 export interface IGithubUser extends Pick<GithubUserApi, "avatar_url" | "html_url"> {
     name: string;
     bio: string;
