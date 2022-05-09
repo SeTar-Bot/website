@@ -1,6 +1,51 @@
-export const DiscordSupport = process.env["supportURL"] ?? "https://discord.gg/7jgfP6j4Tc";
-export const InviteURL = process.env["inviteURL"] ?? "https://discord.com/oauth2/authorize?client_id=750312298555506748&scope=bot+applications.commands&permissions=693679009553"
-export const GithubProfile = process.env["githubProfile"] ?? "https://github.com/Setar-Bot";
-export const GithubRepo = process.env["githubRepo"] ?? "https://github.com/SeTar-Bot/Setar-Bot";
-export const tosURL = process.env["ToSURL"] ?? "/ToS.html"
-export const PPolicyURL = process.env["PrivacyPolicyURL"] ?? "/Privacy.html"
+
+import { DataConfig } from "./types/Config";
+import { Github } from "./structers";
+
+const config: DataConfig = {
+    /**
+     * Choose Org for Github Organizations
+     * And user for Github User
+     */
+    type: "org",
+    /**
+     * Github Username
+     * required on type org or user only.
+     */
+    username: "setar-bot",
+    /**
+     * Change Type to "manual" and remove username property, instead add the line below
+     * You can also put data object and change some properties instead of fetching everything from Github
+     * Add this Class first line of the file:
+     * 
+     * import { Github } from "./structers";
+     * 
+     * And then add the below property
+     * 
+     * PS: There is much more options to work around, so make sure to check it out yourself !
+     */
+    data: new Github("org", "setar-bot")
+        .setContacts([
+            {
+                type: 'github',
+                url: 'https://github.org/setar-bot',
+                placeholder: 'Setar-Bot'
+            }
+        ])
+        .setShortInfo('One of the best Music Bots in Discord.'),
+
+
+    /**
+     * Choose which component you don't need in your website
+     * BUT, BE CAREFUL,
+     * Disabling or Enabling Some components might cause some errors product result
+     */
+    enabledComponents:
+    [
+        //"about",
+        "contact",
+        "members"
+    ]
+}
+
+export default config;

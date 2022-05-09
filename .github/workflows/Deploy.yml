@@ -2,9 +2,8 @@ name: Github Pages 🚀
 
 on:
   push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+    branches: 
+      - main
 
 jobs:
   build:
@@ -20,17 +19,14 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "npm"
       - name: Installing Packages 🥁
         run: npm i
       
+      - name: 🧪 Lint
+        run: npm run lint
+        
       - name: Building 🧱
         run: npm run build
-        env:
-          supportURL: ${{ secrets.supportURL }}
-          inviteURL: ${{ secrets.inviteURL }}
-          githubRepo: ${{ secrets.githubRepo }}
-          githubProfile: ${{ secrets.githubProfile }}
 
       - name: Deploy to Github-Pages 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
